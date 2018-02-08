@@ -1,26 +1,25 @@
+var buttons  = document.getElementById('nav').getElementsByClassName('button');
 
-
-function getButtonClass() {
-    var navi = document.getElementById('nav');
-    var elementsWithButtonClassInNav = navi.getElementsByClassName('button');
-    return elementsWithButtonClassInNav;
+for (var i=0; i<buttons.length; i++){
+    alert(buttons[i].innerText);
 }
 
-var x = getButtonClass();   //przechowuje buttony o klasie button
-    console.log(x);
 
-var y = x.length;         // przechouje dlugosc tablicy
-    console.log(y);
+/*
+/////////////////////////////////////uniwersalana funkcja
 
-
-function showButtonElements() {
-    for(var i=0; i<y; i++){
-        alert(x[i].innerText);
+function showButtonElements(showButton) {
+    for (var i=0; i<showButton.length; i++){
+        alert(showButton[i].innerText);
     }
     
 }
 
-showButtonElements(x,y);
+showButtonElements(buttons);
+
+/////////////////////////////////////////////////////////////////////////////
+
+*/
 
 
 
