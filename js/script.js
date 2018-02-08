@@ -13,7 +13,7 @@ var y = x.length;         // przechouje dlugosc tablicy
     console.log(y);
 
 
-function showButtonElements(x,y) {
+function showButtonElements() {
     for(var i=0; i<y; i++){
         alert(x[i].innerText);
     }
